@@ -1,0 +1,7 @@
+<h1>Eldest Director</h1>
+
+# the dob may be nil, so we use the safe navigation operator (&.)
+<p>
+  The eldest director in our dataset is <a href="/directors/<%= @eldest_director.id %>"><%= @eldest_director.name %></a>,
+  born on <%= @eldest_director.dob&.strftime("%B %d, %Y") %>.
+</p>
