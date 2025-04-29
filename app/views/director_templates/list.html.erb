@@ -12,13 +12,13 @@
 
   <% Director.all.each do |a_director| %>
     <tr>
-    <th><%= a_director.id %></th>
-    <th><img src="<%= a_director.image %>" width="100"></th>
-    <th><%= a_director.name %></th>
-    <th><%= a_director.dob %></th>
-    <th>
+    <td><%= a_director.id %></td>
+    <td><img src="<%= a_director.image %>" width="100"></td>
+    <td><%= a_director.name %></td>
+    <td><%= a_director.dob %></td>
+    <td>
       <a href="/directors/<%= a_director.id %>">Show details</a>
-    </th>
+    </td>
     </tr>
   <% end %>
 
